@@ -4,6 +4,11 @@ import records.StudentInfo;
 
 import java.util.ArrayList;
 
+/**
+ * typical quickSorting approach. but here instead of using array,
+ * arraylist has been used though implementation is same.
+ * sorted alphabetically.
+ */
 public class SortByName {
 
     public void quickSort(ArrayList<StudentInfo> list, int low, int high) {
@@ -20,9 +25,9 @@ public class SortByName {
         StudentInfo pivot = list.get(high);
         int i = (low - 1);
 
-        for(int j = low; j < high; j++){
+        for (int j = low; j < high; j++) {
 
-            if(list.get(j).getName().toLowerCase().compareTo(pivot.getName().toLowerCase()) <= 0){
+            if (list.get(j).getName().toLowerCase().compareTo(pivot.getName().toLowerCase()) <= 0) {  //converted to lowercase and used compareTo to compare.
                 i++;
 
                 StudentInfo temp = list.get(i);

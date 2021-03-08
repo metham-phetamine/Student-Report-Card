@@ -4,6 +4,10 @@ import records.StudentInfo;
 
 import java.util.ArrayList;
 
+/**
+ * same as sortByNames class but here instead of comparing names
+ * here marks has been compared and sorted accordingly.
+ */
 public class SortByMarks {
 
     public void quickSort(ArrayList<StudentInfo> list, int low, int high) {
